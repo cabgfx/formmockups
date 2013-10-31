@@ -1,0 +1,72 @@
+#app-header {
+  & {
+    float: left;
+    width: 100%;
+    background: #f4f4f4;
+    color: #111;
+  }
+
+  .menu-trigger {
+    float: left;
+    padding: 10px 25px;
+    margin-right: 20px;
+    border-right: 1px solid #dcdcdc;
+    font: bold 48px/1 'Times New Roman', Times, Tahoma;
+    text-decoration: none;
+    color: inherit;
+    
+    transition: all .2s;
+
+    &:hover {background: #dcdcdc;}
+    &:active {background: #111; color: #dcdcdc;}
+  }
+
+  h1 {float: left; margin: 0; padding: 10px 0;}
+}
+
+form {clear: both;}
+h3 {margin: 30px 0 20px; font: normal 14px/1 monospace; color: #666;}
+
+#tools {
+  & {display: none;}
+  label {display: block; margin-bottom: 10px;}
+}
+
+#jPanelMenu-menu {
+  & {background: #222; color: #fefefe;}
+
+  style {
+    display: block;
+    font-family: monospace;
+    padding: 10px;
+    
+    &[contenteditable] {
+      &:hover, &:active, &:focus {color: lightyellow;}
+    }
+  }
+
+  label {
+    display: block;
+    padding: 15px 10px;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  input[type="text"] {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px 4px;
+    margin: 5px 0;
+    border: 0;
+  }
+
+  .help {font-size: 12px; color: #bbb;}
+}
+
+.jPanelMenu-panel {
+  [contenteditable] {
+    &:hover, &:active, &:focus {background: lightyellow; color: #111;}
+  }
+}

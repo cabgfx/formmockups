@@ -1,18 +1,26 @@
 $(function() {
+
+  var jPM = $.jPanelMenu({
+      menu: '#tools',
+      keyboardShortcuts: false
+  });
   
-  $('#bold-labels-toggle').change(function() {
+  jPM.on();
+
+  
+  $('.bold-labels-toggle').change(function() {
     $('form label').toggleClass('bold');
   });
 
-  $('#block-labels-toggle').change(function() {
+  $('.block-labels-toggle').change(function() {
     $('form label').toggleClass('block');
   });
 
-  $('#form-styles-toggle').change(function() {
-    $('#tools style').toggleClass('hidden');
+  $('.form-styles-toggle').change(function() {
+    $('#jPanelMenu-menu style').toggleClass('hidden');
   });
 
-  $('#font-family').keyup(function() {
+  $('.font-family').keyup(function() {
     var $value = $(this).val(),
         $form = $('form');
     
@@ -24,7 +32,7 @@ $(function() {
 
   });
   
-  $('#page-background').keyup(function() {
+  $('.page-background').keyup(function() {
     var $value = $(this).val(),
         $page = $('body');
 
