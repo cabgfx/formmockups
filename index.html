@@ -11,12 +11,37 @@
 
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/main.css">
+
       <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
 
-    <h1>Default H5BP styling</h1>
-    <p><a href="http://html5doctor.com/html5-forms-input-types/">HTML5 forms input types</a></p>
+    <header id="app-header">
+      <h1>&#8984; + &#8679; + 4 + Ctrl (optional)</h1>
+    </header>
+
+    <section id="tools">
+      <label><input type="checkbox" id="bold-labels-toggle"> Bold labels</label>
+      <label><input type="checkbox" id="block-labels-toggle"> Labels above fields</label>
+
+      <label>Font-family: <input type="text" id="font-family" placeholder="eg. Georgia, sans-serif, etc."></label>
+      <label>Page background: <input type="text" id="page-background" placeholder="Any value valid in CSS for the background property (shorthand)"></label>
+
+      <label><input type="checkbox" id="form-styles-toggle"> Show/hide editable form CSS</label>
+
+      <style contenteditable class="hidden">
+        form {padding: 40px;}
+        form label {margin-right: 10px;}
+        form input[placeholder],
+        form textarea[placeholder],
+        form select + label {margin-left: 20px;}
+        form select[multiple] {vertical-align: top;}
+        form hr {margin-top: 20px;}
+
+        .bold {font-weight: bold;}
+        .block {display: block; margin-bottom: 3px;}
+      </style>
+    </section>
 
     <form action="#" method="get">
       <section id="inputs">
@@ -242,13 +267,11 @@
         </select>
       </section>
     </form>
-
-    <!--
+  
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    -->
+    <script src="js/main.js"></script>   
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

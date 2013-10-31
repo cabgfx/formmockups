@@ -99,18 +99,17 @@ textarea {
    ========================================================================== */
 
 
-body {padding: 40px;}
+#app-header {background: #f4f4f4; padding: 20px;}
+h1 {margin: 0; color: #aaa; font-weight: 100;}
+
 h3 {margin: 30px 0 20px; font: normal 14px/1 monospace; color: #666;}
 
-label {margin-right: 10px;}
+#tools label {display: block; margin-bottom: 10px;}
+#tools style {display: block; font-family: monospace;}
 
-input[placeholder],
-textarea[placeholder],
-select + label {margin-left: 20px;}
-
-select[multiple] {vertical-align: top;}
-
-hr {margin-top: 20px;}
+[contenteditable]:hover,
+[contenteditable]:active,
+[contenteditable]:focus {background: lightyellow;}
 
 
 
